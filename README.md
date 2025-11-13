@@ -26,16 +26,15 @@ Simple knowledge of running commands on Linux Terminal.
 ### Installing
 
 
-You need to install git and how to install them.
+You need to install git.
 
 On Linux
 ```
 sudo apt install git-all
 ```
 
-On Windows
+On Windows you can download the binary of installation from: 
 ```
-you can download the binary of installation from: 
       https://git-scm.com/install/windows
 ```
 
@@ -43,7 +42,6 @@ On Mac
 
 ```
 brew install git
-
 ```
 
 
@@ -65,7 +63,7 @@ git status
 
 ## ✍️ Author <a name = "author"></a>
 
-- [@halilosjarraya](https://github.com/Khalilosjarraya) - Idea & Initial work
+- [@Khalilosjarraya](https://github.com/Khalilosjarraya) - Embedded Software Engineer
 
 
 
