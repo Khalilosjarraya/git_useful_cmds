@@ -7,6 +7,7 @@
 ## 📝 Table of Contents
 
 - [About](#about)
+- [Installation](#installation)
 - [Usage](#usage)
 - [Author](#author)
 
@@ -23,7 +24,7 @@ These are diffrent useful git commands that most developpers need it in their da
 Simple knowledge of running commands on Linux Terminal.
 
 
-### Installing
+### Installation <a name = "installation"></a>
 
 
 You need to install git.
@@ -103,6 +104,31 @@ or simply if we are in another  branch
 git merge feature_dev main
 ```
 
+deal with conflicts of merge 
+the merge conflict is resulted when we are modifying the same file on diffrent branches
+for example we are modifying the readme.md on main branch and we make other modifications of readme.md in branch feature_dev
+```
+git merge feature_dev
+will output:
+Auto-merging readme.md
+CONFLICT (content): Merge conflict in readme.md
+Automatic merge failed; fix conflicts and then commit the result.
+```
+to fix it we need to deal with readme.md by 
+```
+nano readme.md
+then we keep the modifcations that we want and we delete the signs =====  >>>>> Head  <<<<<< feature_dev
+```
+
+working with remote repositories or Repos
+to list all remote repos 
+```
+git remote -v 
+```
+to add a remote repo
+```
+git remote add name_of_repo Url/path 
+```
 ## ✍️ Author <a name = "author"></a>
 
 - [@Khalilosjarraya](https://github.com/Khalilosjarraya) - Embedded Software Engineer
