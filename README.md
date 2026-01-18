@@ -141,7 +141,7 @@ this cmd is to copy the content of file to clipboard
 ```
       xclip -selection clipboard < ~/.ssh/id_rsa.pub 
 ```
-then you add that generated key on your profile (add ssh key)(follow the video )
+then you add that generated key on your profile (add ssh key)(follow the video: https://www.youtube.com/watch?v=5jwzAhcovMU )
 now set the url of .git/config from https to ssh from your project folder
 ```
       git remote set-url origin git@github.com:<your_sername>/<your_project>.git
