@@ -9,6 +9,7 @@
 - [About](#about)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Fixes] (#fixes)
 - [Author](#author)
 
 
@@ -129,6 +130,25 @@ to add a remote repo
 ```
 git remote add name_of_repo Url/path 
 ```
+## Fix Problems <a name="fixes">
+everytime when you make a push, git requires an authentification, so you enter your email or username and also your password but it dosen't work!!!
+here is a workaround to deal with this problem:
+```
+    ssh-keygen -t rsa -b 4096 -C "youremail@gmail.com"
+    eval "$(ssh-agent -s)"
+```
+this cmd is to copy the content of file to clipboard
+```
+      xclip -selection clipboard < ~/.ssh/id_rsa.pub 
+```
+then you add that generated key on your profile (add ssh key)(follow the video )
+now set the url of .git/config from https to ssh from your project folder
+```
+      git remote set-url origin git@github.com:<your_sername>/<your_project>.git
+```
+now problem resolved.
+PS: to avoid this problem, it's better to clone the repo using ssh url from the start
+
 ## ✍️ Author <a name = "author"></a>
 
 - [@Khalilosjarraya](https://github.com/Khalilosjarraya) - Embedded Software Engineer
