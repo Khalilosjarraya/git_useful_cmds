@@ -9,7 +9,7 @@
 - [About](#about)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Fixes] (#fixes)
+- [Fixes](#fixes)
 - [Author](#author)
 
 
@@ -130,7 +130,7 @@ to add a remote repo
 ```
 git remote add name_of_repo Url/path 
 ```
-## Fix Problems <a name="fixes"></a>
+## Fix Problems <a name = "fixes"></a>
 everytime when you make a push, git requires an authentification, so you enter your email or username and also your password but it dosen't work!!!
 here is a workaround to deal with this problem:
 ```
